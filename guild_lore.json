@@ -1,0 +1,10 @@
+{
+    "Threat Levels": {
+        "Wolf": "Basic cyber threats such as phishing and brute-force attacks.",
+        "Tiger": "More advanced social engineering and minor exploits.",
+        "Demon": "Ransomware, deep network infiltration, and APT-like threats.",
+        "Dragon": "Cyber warfare, major nation-state attacks, deep persistence threats.",
+        "God": "World-scale cyber events, infrastructure takeover, and AI-driven cyber warfare."
+    },
+    "Guild Information": "The Threat Hunter Guild is a secret global organization dedicated to stopping cyber threats. Hundreds train in Class E, but only a few reach the elite ranks of Class S."
+}

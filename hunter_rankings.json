@@ -1,0 +1,139 @@
+{
+    "S-Class": [
+        {
+            "Codename": "$!!#$^@#",
+            "Rank": "S-Rank 1",
+            "Status": "Hidden"
+        },
+        {
+            "Codename": "%^&*(@!",
+            "Rank": "S-Rank 2",
+            "Status": "Hidden"
+        },
+        {
+            "Codename": "The Watcher",
+            "Rank": "S-Rank 3",
+            "Status": "Known to Gray (Mentor Figure)"
+        }
+    ],
+    "A-Class": [
+        {
+            "Codename": "Phantom Blade-Edge",
+            "Rank": "A-Rank 3",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Firewall Phantom",
+            "Rank": "A-Rank 12",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Silent Specter",
+            "Rank": "A-Rank 22",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Terminal Terror",
+            "Rank": "A-Rank 40",
+            "Status": "Active"
+        }
+    ],
+    "B-Class": [
+        {
+            "Codename": "Black Ice",
+            "Rank": "B-Rank 7",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Packet Paladin",
+            "Rank": "B-Rank 19",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Malware Mage",
+            "Rank": "B-Rank 31",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Keylogger King",
+            "Rank": "B-Rank 45",
+            "Status": "Active"
+        }
+    ],
+    "C-Class": [
+        {
+            "Codename": "ZeroDay Zephyr",
+            "Rank": "C-Rank 14",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Hash Hound",
+            "Rank": "C-Rank 28",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Payload Pyro",
+            "Rank": "C-Rank 39",
+            "Status": "Active"
+        },
+        {
+            "Codename": "DNS Dagger",
+            "Rank": "C-Rank 47",
+            "Status": "Active"
+        }
+    ],
+    "D-Class": [
+        {
+            "Codename": "BruteForcer",
+            "Rank": "D-Rank 55",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Phishing Phantom",
+            "Rank": "D-Rank 72",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Packet Puncher",
+            "Rank": "D-Rank 90",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Tor Tracker",
+            "Rank": "D-Rank 113",
+            "Status": "Active"
+        }
+    ],
+    "E-Class": [
+        {
+            "Codename": "Gray",
+            "Rank": "E-Rank 742",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Zip-Zap",
+            "Rank": "E-Rank 799",
+            "Status": "Deceased (Malicious USB Attack)"
+        },
+        {
+            "Codename": "Be-Boop-Be-Boop",
+            "Rank": "E-Rank 810",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Mouse Clicker",
+            "Rank": "E-Rank 890",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Regex Reaper",
+            "Rank": "E-Rank 940",
+            "Status": "Active"
+        },
+        {
+            "Codename": "Code Gremlin",
+            "Rank": "E-Rank 1001",
+            "Status": "Active"
+        }
+    ]
+}

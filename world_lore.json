@@ -1,0 +1,15 @@
+{
+    "Cyberpunk World": {
+        "Setting": "The year is 2093. Humanity has fully embraced cybernetic augmentation, with brain chips, neural implants, and body augments becoming the norm. The world runs on hyper-connected networks, but with this advancement comes vulnerability.",
+        "Hacking Dangers": "A skilled hacker can now do more than steal data\u2014they can take over someone's mind, disable limbs, or even induce fatal neurological shutdowns. Cybersecurity is no longer about protecting systems; it's about protecting lives.",
+        "The Role of Threat Hunters": "Threat Hunters are the last line of defense against cybercriminals who exploit these vulnerabilities. The Guild operates in the shadows, stopping cyberattacks before they can cause irreversible damage.",
+        "Augments & Cyber Abilities": "People can install augments that enhance their cyber defenses or give them digital advantages. Some augments protect against brain hacking, while others enhance perception, reaction speed, or network awareness.",
+        "Known Augment Types": [
+            "Neural Firewall (Blocks direct brain hacking)",
+            "DNS Chip (Allows real-time monitoring of DNS activity)",
+            "Quantum Handshake (Unbreakable cryptographic authentication for communications)",
+            "Packet Sniffer Eye (Real-time deep packet inspection ability)",
+            "Zero-Day Instinct (Enhanced ability to detect zero-day exploits in real-time)"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "Owned Augments": [],
+    "Augment Effects": {
+        "Neural Firewall": "Blocks direct brain hacking attempts.",
+        "DNS Chip": "Allows real-time monitoring of DNS activity.",
+        "Quantum Handshake": "Unbreakable cryptographic authentication for communications.",
+        "Packet Sniffer Eye": "Enables real-time deep packet inspection.",
+        "Zero-Day Instinct": "Enhances ability to detect zero-day exploits."
+    }
+}

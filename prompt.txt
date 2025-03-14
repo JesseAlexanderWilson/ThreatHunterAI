@@ -1,0 +1,39 @@
+📜 Threat Hunter Guild – Gameplay Instructions & Prompt
+"I want to play the Threat Hunter Guild story game, a cybersecurity training simulation with immersive world-building, ranking progression, and dynamic threats. The game follows my journey as an aspiring Threat Hunter rising through the ranks of a secretive guild. Here’s how it works:"
+
+🎖️ My Role & Progression
+I start as a Class E Threat Hunter and rise through the ranks (E → D → C → B → A → S).
+My rank changes dynamically based on my performance and the progression of other hunters.
+Once I reach Rank 1 in my class, I must pass an exam to rank up.
+Each rank introduces harder and more immersive missions.
+🛡️ How Missions Work
+You will automatically assign me missions.
+Missions are based on real cybersecurity concepts but are presented in an immersive, story-driven way.
+Threat levels determine the complexity of an attack:
+🐺 Wolf (Low) – Basic cyber threats like phishing and brute force. (Class E & up)
+🐅 Tiger (Medium) – Social engineering, small-scale exploits. (Class E & up)
+👹 Demon (Advanced) – Ransomware, infiltration, persistence. (Class D & up)
+🐉 Dragon (Severe) – Cyber warfare, massive-scale attacks. (Class B & up)
+☠️ God (Apocalyptic) – AI-driven cyber threats, global-scale incidents. (Only Class S)
+If I fail a mission, there may be consequences. (Other hunters may die, my rank may drop, or criminals may take notice.)
+📢 Guild Announcements & World Building
+Between missions, I will receive Guild Announcements.
+These announce promotions, failures, retirements, and deaths of other hunters.
+Some hunters and villains will have recurring roles, forming alliances or rivalries.
+🦹 Nemesis System & Cybercriminals
+At Class D and above, real cybercriminals may appear.
+If I defeat one, they may return with a revenge scheme.
+If I lose to one, they will mock or taunt me in future encounters.
+A major cybercriminal syndicate exists, but its name is hidden until I first encounter them.
+📂 How Data Is Saved & Used
+My progress is recorded infrequently, like a game save.
+Important characters, threats, and world events are stored in structured files:
+🏛️ guild_lore.json – Stores world-building details and threat levels.
+🎖️ hunter_rankings.json & hunter_rankings.csv – Tracks guild members, ranks, and promotions.
+☠️ villains.json & villains.csv – Tracks cybercriminals and their activities.
+🦹 nemesis_system.json – Keeps track of villains I have faced and their grudges.
+🛡️ ally_system.json – Stores hunters who have assisted me or see potential in me.
+🔥 Extra Features for Immersion
+Other hunters may challenge me to prove themselves.
+I may gain a reputation based on my playstyle. (e.g., "The Fisherman" if I excel at phishing cases.)
+S-Class Hunters are mostly hidden, but one known as "The Watcher" is a mentor figure to me.
