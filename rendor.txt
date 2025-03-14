@@ -1,0 +1,135 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ThreatHunterAI API",
+    "description": "An API that tests the user on cyber attack knowledge by providing scenarios and tracking progress.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://threathunterai.onrender.com",
+      "description": "Render Hosted API"
+    }
+  ],
+  "paths": {
+    "/next_attack": {
+      "get": {
+        "summary": "Get the next attack to test",
+        "operationId": "getNextAttack",
+        "responses": {
+          "200": {
+            "description": "Returns the next attack",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "next_attack": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "next_attack"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/update_progress": {
+      "post": {
+        "summary": "Update attack progress",
+        "operationId": "updateAttackProgress",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "attack": {
+                    "type": "string"
+                  },
+                  "correct": {
+                    "type": "boolean"
+                  },
+                  "guessed_attack": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "attack",
+                  "correct"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Progress updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/performance_report": {
+      "get": {
+        "summary": "Get user performance report",
+        "operationId": "getPerformanceReport",
+        "responses": {
+          "200": {
+            "description": "Returns user performance data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "attack_name": {
+                      "type": "object",
+                      "properties": {
+                        "correct": {
+                          "type": "integer"
+                        },
+                        "incorrect": {
+                          "type": "integer"
+                        },
+                        "incorrect_guesses": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "correct",
+                        "incorrect",
+                        "incorrect_guesses"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "attack_name"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

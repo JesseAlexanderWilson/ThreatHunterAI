@@ -2,7 +2,7 @@ import csv
 import json
 import random
 from collections import defaultdict
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request # type: ignore
 
 # Flask app setup
 app = Flask(__name__)
@@ -101,4 +101,4 @@ def api_performance_report():
     return jsonify(report)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)
