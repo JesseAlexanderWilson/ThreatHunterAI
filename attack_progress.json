@@ -1,0 +1,28 @@
+{
+    "Phishing": {
+        "correct": 1,
+        "incorrect": 0,
+        "incorrect_guesses": []
+    },
+    "SQL Injection": {
+        "correct": 0,
+        "incorrect": 1,
+        "incorrect_guesses": [
+            "Cross-Site Scripting"
+        ]
+    },
+    "Buffer Overflow": {
+        "correct": 0,
+        "incorrect": 1,
+        "incorrect_guesses": [
+            "lel"
+        ]
+    },
+    "Botnets": {
+        "correct": 0,
+        "incorrect": 1,
+        "incorrect_guesses": [
+            "a"
+        ]
+    }
+}
