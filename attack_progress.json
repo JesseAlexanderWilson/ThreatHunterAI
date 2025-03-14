@@ -13,16 +13,12 @@
     },
     "Buffer Overflow": {
         "correct": 0,
-        "incorrect": 1,
-        "incorrect_guesses": [
-            "lel"
-        ]
+        "incorrect": 0,
+        "incorrect_guesses": []
     },
     "Botnets": {
         "correct": 0,
-        "incorrect": 1,
-        "incorrect_guesses": [
-            "a"
-        ]
+        "incorrect": 0,
+        "incorrect_guesses": []
     }
 }
