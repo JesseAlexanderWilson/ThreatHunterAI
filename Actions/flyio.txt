@@ -1,0 +1,155 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Threat Hunter AI API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/create_file": {
+      "post": {
+        "summary": "Create a new JSON or CSV file",
+        "operationId": "createFile",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "filename": { "type": "string" },
+                  "filetype": { "type": "string", "enum": ["json", "csv"] }
+                },
+                "required": ["filename"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "File created successfully"
+          },
+          "409": {
+            "description": "File already exists"
+          }
+        }
+      }
+    },
+    "/add_data": {
+      "post": {
+        "summary": "Add data to an existing JSON or CSV file",
+        "operationId": "addData",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "filename": { "type": "string" },
+                  "entry": { "type": "object" }
+                },
+                "required": ["filename", "entry"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Data added successfully"
+          },
+          "404": {
+            "description": "File not found"
+          }
+        }
+      }
+    },
+    "/remove_data": {
+      "post": {
+        "summary": "Remove specific data from a JSON or CSV file",
+        "operationId": "removeData",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "filename": { "type": "string" },
+                  "key": { "type": "string" }
+                },
+                "required": ["filename", "key"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Entry removed successfully"
+          },
+          "404": {
+            "description": "File or key not found"
+          }
+        }
+      }
+    },
+    "/add_column": {
+      "post": {
+        "summary": "Add a new column to an existing CSV file",
+        "operationId": "addColumn",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "filename": { "type": "string" },
+                  "column_name": { "type": "string" }
+                },
+                "required": ["filename", "column_name"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Column added successfully"
+          },
+          "404": {
+            "description": "File not found"
+          }
+        }
+      }
+    },
+    "/modify_entry": {
+      "post": {
+        "summary": "Modify a specific entry in a JSON or CSV file",
+        "operationId": "modifyEntry",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "filename": { "type": "string" },
+                  "key": { "type": "string" },
+                  "new_value": { "type": "object" }
+                },
+                "required": ["filename", "key", "new_value"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Entry modified successfully"
+          },
+          "404": {
+            "description": "File or key not found"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,29 +1,10 @@
 {
-    "Villains": [
-        {
-            "Codename": "Byte Reaper",
-            "Affiliation": "Unknown",
-            "Known For": "Mass botnet controller."
-        },
-        {
-            "Codename": "Red October",
-            "Affiliation": "Unknown",
-            "Known For": "Spear-phishing government officials."
-        },
-        {
-            "Codename": "C0balt Spectre",
-            "Affiliation": "Unknown",
-            "Known For": "Top-tier ransomware creator."
-        },
-        {
-            "Codename": "The Black Lotus",
-            "Affiliation": "Unknown",
-            "Known For": "Advanced supply chain attacks."
-        },
-        {
-            "Codename": "K1L-SW1TCH",
-            "Affiliation": "Unknown",
-            "Known For": "Threatens to trigger kill-switch malware."
-        }
-    ]
+    "Marcus Vega": {
+        "status": "Unknown",
+        "role": "Corporate Asset"
+    },
+    "DeepZero Controllers": {
+        "status": "Active",
+        "role": "Unknown"
+    }
 }

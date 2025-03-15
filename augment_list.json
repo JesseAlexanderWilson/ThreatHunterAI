@@ -1,0 +1,10 @@
+{
+    "installed": [
+        "Signal Scrambler",
+        "Facial Recognition Cloak"
+    ],
+    "effects": {
+        "Signal Scrambler": "Prevents remote hacking, tracking, and signal interception.",
+        "Facial Recognition Cloak": "Blocks AI surveillance and recognition systems."
+    }
+}

@@ -1,34 +1,11 @@
 {
-    "Hunters_Guild": {
-        "Reputation": 0,
-        "Standing": "Neutral",
-        "Notes": "Recognized as competent but not fully trusted yet."
+    "guild": 50,
+    "qtech_industries": -20,
+    "villains": {
+        "Marcus Vega": -30,
+        "Unknown DeepZero Controllers": -50
     },
-    "Villain_Organizations": {
-        "Reputation": -80,
-        "Standing": "Low Threat",
-        "Notes": "Cybercriminals are unaware of your interference\u2014so far."
-    },
-    "Companies": {
-        "Biotech_Firm": {
-            "Reputation": 10,
-            "Standing": "Cautious Respect",
-            "Notes": "Handled their case discreetly, but they aren\u2019t fully loyal yet."
-        },
-        "Financial_Institution": {
-            "Reputation": 6,
-            "Standing": "Neutral-Positive",
-            "Notes": "Resolved breach without public scandal."
-        },
-        "News_Organization": {
-            "Reputation": 0,
-            "Standing": "Neutral",
-            "Notes": "No direct involvement yet."
-        },
-        "Hospital": {
-            "Reputation": 20,
-            "Standing": "Trusted",
-            "Notes": "Saved lives by preventing a major cyberattack without causing panic."
-        }
+    "companies": {
+        "Sentinel Secure": 10
     }
 }

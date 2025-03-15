@@ -1,9 +1,21 @@
 {
-    "SQL Injection": {
-        "correct": 0,
-        "incorrect": 1,
-        "incorrect_guesses": [
-            "Cross-Site Scripting"
+    "deepzero": {
+        "status": "Active",
+        "threat_level": "Severe",
+        "last_known_location": "QTech Industries Server",
+        "suspected_controllers": "Unknown"
+    },
+    "marcus_vega": {
+        "status": "At Large",
+        "last_seen": "Unknown",
+        "role": "Corporate Asset"
+    },
+    "whitmore_case": {
+        "status": "Solved",
+        "key_findings": [
+            "Whitmore was investigating DeepZero.",
+            "He had an insider at QTech.",
+            "He was silenced before he could expose them."
         ]
     }
 }

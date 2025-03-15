@@ -1,0 +1,149 @@
+
+
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Threat Hunter AI API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://threathunterai.fly.dev"
+    }
+  ],
+  "paths": {
+    "/next_attack": {
+      "get": {
+        "summary": "Retrieve the next attack to be tested",
+        "operationId": "getNextAttack",
+        "responses": {
+          "200": {
+            "description": "Returns the next attack type for testing",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "next_attack": {
+                      "type": "string",
+                      "description": "The name of the next attack"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/update_progress": {
+      "post": {
+        "summary": "Update the user's attack identification progress",
+        "operationId": "updateAttackProgress",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "attack": {
+                    "type": "string",
+                    "description": "The name of the attack being updated"
+                  },
+                  "correct": {
+                    "type": "boolean",
+                    "description": "Whether the user correctly identified the attack"
+                  },
+                  "guessed_attack": {
+                    "type": "string",
+                    "nullable": true,
+                    "description": "If incorrect, the incorrect attack guessed by the user"
+                  }
+                },
+                "required": ["attack", "correct"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Confirmation of progress update",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Progress updated successfully"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request (missing attack name)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string",
+                      "example": "Missing attack name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/performance_report": {
+      "get": {
+        "summary": "Get user performance report",
+        "operationId": "getPerformanceReport",
+        "responses": {
+          "200": {
+            "description": "Returns a performance report of attack identification",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "report": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "object",
+                        "properties": {
+                          "correct": {
+                            "type": "integer",
+                            "description": "Number of correctly identified attacks"
+                          },
+                          "incorrect": {
+                            "type": "integer",
+                            "description": "Number of incorrectly identified attacks"
+                          },
+                          "incorrect_guesses": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "List of incorrect guesses made for this attack"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
